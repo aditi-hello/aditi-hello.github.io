@@ -5,23 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My site</title>
+    <style>
+        #header1 {
+            padding: 60px;
+            text-align: center;
+            border: 5px double #B9F3E4;
+            font-size: 30px;
+            margin: 10px;
+        }
+
+        nav {
+            border: 5px double purple;
+            margin: 10px;
+            padding: 5px;
+        }
+        
+        article {
+            margin: 0 2px 0 10px;
+            border: 5px double #2F58CD;
+            width: 75%;
+        }
+       
+        #aside {
+            margin: 0 10px 0 3px;
+            border: 5px double #867070;
+            width: 25%;
+        }
+
+        aside {
+            border: 5px double #62CDFF;
+            padding: 0 10px 90px 0;
+        }
+        
+        #header2 {
+            padding: 10px;
+            border: 3px double #B9F3E4;
+            text-align: left;
+        }
+        
+        section {
+            border:3px double purple;
+            padding: 10px;
+            margin: 3px;
+        }
+
+        footer {
+            border: 5px double #FCE22A;
+            padding: 10px;
+            margin: 3px;
+        }
+
+
+        .body {
+            display: flex;
+        }
+    </style>
 </head>
 <body>
     <div>
-        <header>
+        <header id="header1">
             Header
         </header>
         <nav>
             Nav
         </nav>
-        <div>
-            <article>
-                <header> header2 </header>
+        <div class="body">
+            <article> Article
+                <header id="header2"> header2 </header>
+                <br>
+                <br><br>
                 <section> section 1</section>
                 <section> section 2 </section>
                 <footer> footer 1 </footer>
             </article>
-            <div>
+            <div id="aside">
+                Div
                 <aside>
                     Aside
                 </aside>
@@ -29,8 +87,8 @@
                     Aside
                 </aside>
             </div>
-            <footer>Footer 2</footer>
         </div>
+            <footer>Footer 2</footer>
     </div>
 </body>
 </html>
